@@ -1,0 +1,6 @@
+export * from './LoginForm/login-form.component'
+export * from './RegistrationForm/registration-form.component'
+export * from './FormWrapper/form-wrapper.component'
+export * from './RegistrationForm/RegistrationFormProvider/form-provider.component'
+export * from './ResetPasswordForm/ResetRequestForm/reset-request-form'
+export * from './ResetPasswordForm/FormResetController/form-reset-controller'
