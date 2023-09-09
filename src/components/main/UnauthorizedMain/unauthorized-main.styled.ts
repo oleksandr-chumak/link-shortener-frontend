@@ -2,15 +2,12 @@ import styled from 'styled-components'
 import { FieldWithAutoPaste } from '../FieldWithClipboard/FieldWithAutoPaste/field-with-auto-paste.component'
 
 
-export const UnauthorizedContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 900px;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  margin: 100px auto 30px auto;
+export const UnauthorizedField = styled(FieldWithAutoPaste)`
+  @media (max-width: ${({ theme }) => theme.device.mobileL}) {
+    height: 60px;
+  }
 `
+
 export const Header = styled.h1`
   font-size: 55px;
   font-weight: bold;
@@ -37,20 +34,27 @@ export const Description = styled.h2`
     font-size: 13px;
   }
 `
-export const UnauthorizedFieldWrapper = styled.div`
+export const HeaderContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0 20px;
+  
+  max-width: 900px;
+  gap: 10px;
+  width: 100%;
+  margin: 100px auto 30px auto;
+`
+export const HeaderFieldWrapper = styled.div`
   width: 70%;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 25px;
-  @media(max-width: ${({theme}) => theme.device.mobileL}){
+  @media (max-width: ${({ theme }) => theme.device.mobileL}) {
     width: 100%;
     margin-top: 15px;
-  }
-`
-export const UnauthorizedField = styled(FieldWithAutoPaste)`
-  @media(max-width: ${({theme}) => theme.device.mobileL}){
-    height: 60px;
   }
 `

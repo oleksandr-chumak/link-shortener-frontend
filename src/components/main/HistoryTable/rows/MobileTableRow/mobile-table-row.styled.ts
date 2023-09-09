@@ -16,7 +16,7 @@ export const MobileTableCell =  styled.li`
   height: 63px;
   
   padding: 0 20px;
-  background-color: ${({theme}) => rgba(theme.color.grey,0.6)};
+  background-color: ${({theme}) => rgba(theme.color.black,0.6)};
 `
 
 export const MobileTableCellHeader = styled.h4`

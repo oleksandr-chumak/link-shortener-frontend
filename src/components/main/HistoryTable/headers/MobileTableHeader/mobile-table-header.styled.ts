@@ -6,7 +6,7 @@ export const MobileTableHeaderWrapper = styled.li`
   
   border-radius: 10px 10px 0 0;
   
-  background-color: ${({theme}) => theme.color.grey};
+  background-color: ${({theme}) => theme.color.black};
   height: 63px;
   width: 100%;
   padding: 0 20px;

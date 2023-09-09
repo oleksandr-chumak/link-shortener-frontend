@@ -1,5 +1,5 @@
 import App from '../../views/App'
-import { MainLayout } from '../../components/layout'
+import { MainLayoutWithoutContainer } from '../../components/layout'
 import { Routes } from './routes.types'
 
 export const withoutAuthorizationRoutes: Routes[] = [
@@ -8,6 +8,6 @@ export const withoutAuthorizationRoutes: Routes[] = [
       path: '/',
     },
     element: <App />,
-    layout: MainLayout
+    layout: MainLayoutWithoutContainer
   },
 ]

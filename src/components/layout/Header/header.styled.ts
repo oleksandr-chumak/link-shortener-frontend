@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Button, DropDown, OutlinedButton } from '../../main'
+import { Button, OutlinedButton } from '../../main'
 
 export const HeaderWrapper = styled.header`
   padding: 20px 0 30px 0;
@@ -28,6 +28,7 @@ export const ActionsWrapper = styled.div`
 `
 export const AuthorizedActionsWrapper = styled(ActionsWrapper)`
   flex: 0 0 auto;
+  z-index: 2;
   margin-top: 2.5px ;
   align-items: start;
   @media(max-width: ${({theme}) => theme.device.tabletL}){

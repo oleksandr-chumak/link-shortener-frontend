@@ -1,29 +1,19 @@
 import React from 'react'
-import {
-  Description,
-  Header,
-  UnauthorizedContainer,
-  UnauthorizedField,
-  UnauthorizedFieldWrapper,
-} from './unauthorized-main.styled'
-import Limit from '../Limit/limit.component'
-import { HistoryTable } from '../HistoryTable'
+import { Description, Header, HeaderContainer, HeaderFieldWrapper, UnauthorizedField } from './unauthorized-main.styled'
 
 export const UnauthorizedMain = () => {
   return (
     <>
-      <UnauthorizedContainer>
+      <HeaderContainer>
         <Header>Shorten Your Loooong Links :)</Header>
         <Description>
           Linkly is an efficient and easy-to-use URL shortening service that streamlines your online
           experience.
         </Description>
-        <UnauthorizedFieldWrapper>
+        <HeaderFieldWrapper>
           <UnauthorizedField />
-        </UnauthorizedFieldWrapper>
-        <Limit />
-      </UnauthorizedContainer>
-      <HistoryTable/>
+        </HeaderFieldWrapper>
+      </HeaderContainer>
     </>
   )
 }

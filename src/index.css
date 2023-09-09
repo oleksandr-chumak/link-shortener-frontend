@@ -2,6 +2,14 @@
 /* Reset and base styles  */
 body{
   height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+#root{
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
 }
 * {
   font-family: 'SF Pro Display', sans-serif;

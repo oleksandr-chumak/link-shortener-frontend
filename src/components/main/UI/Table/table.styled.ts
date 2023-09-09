@@ -5,7 +5,7 @@ import { rgba } from 'polished'
 // HEADER
 export const Table = styled.table`
   width: 100%;
-  border-collapse: separate;
+  border-collapse: collapse;
   border-spacing: 0 3px;
   color: ${({ theme }) => theme.color.lite};
   border-radius: 10px 10px 0 0;
@@ -13,7 +13,7 @@ export const Table = styled.table`
 `
 export const TableHeader = styled.thead`
   text-align: left;
-  background-color: ${({ theme }) => theme.color.grey};
+  background-color: ${({ theme }) => theme.color.black};
 `
 export const TableHeaderRow = styled.tr`
   height: 63px;
@@ -21,7 +21,6 @@ export const TableHeaderRow = styled.tr`
 export const TableHeaderCell = styled.th`
   padding:18px 10px 18px 0;
   font-size: 14px;
-  letter-spacing: 1px;
   font-weight: 500;
   &:first-child {
     padding: 13px 10px 13px 20px;
@@ -36,7 +35,9 @@ export const TableBody = styled.tbody`
 `
 
 export const TableBodyRow = styled(TableHeaderRow)`
-  background: ${({theme}) => rgba(theme.color.grey,0.6)};
+  background: ${({theme}) => rgba(theme.color.black,0.6)};
+  border-bottom: 2px solid ${({theme}) => theme.color.black};
+
 `
 export const TableBodyCell = styled.td`
   font-weight: 400;

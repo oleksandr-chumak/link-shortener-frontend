@@ -2,7 +2,6 @@ import React, { FC } from 'react'
 import {
   AuthorizedActionsWrapper, AuthorizedLogo,
   FieldWithAutoPasteWrapper,
-  Logo,
 } from './header.styled'
 import { FieldWithAutoPaste } from '../../main/FieldWithClipboard/FieldWithAutoPaste/field-with-auto-paste.component'
 import { logout, useAppDispatch } from '../../../store'
