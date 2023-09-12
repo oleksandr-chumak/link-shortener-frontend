@@ -1,5 +1,4 @@
 import React, { FC, useState } from 'react'
-import { TableRowProps } from '../../Table/history-table.types'
 import { ShortLinkCell } from '../../cells'
 import {
   MobileRowToggleIcon,
@@ -8,8 +7,9 @@ import {
   MobileTableList,
 } from './mobile-table-row.styled'
 import { MobileAttachmentRow } from './mobile-attachment-row.component'
+import { TransformedLink } from '../../../../../store/interfaces/link.types'
 
-export const MobileTableRow: FC<TableRowProps> = ({ shortLink, ...props }) => {
+export const MobileTableRow: FC<TransformedLink> = ({ shortLink, ...props }) => {
   const [isAttachmentRow, setIsAttachmentRow] = useState<boolean>(false)
 
   const handleToggle = () => {

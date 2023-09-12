@@ -1,4 +1,4 @@
-import { LinkStatus } from '../../Table/history-table.types'
+import { LinkStatus } from 'store/interfaces/link.types'
 
 export interface StatusCellProps{
   status: LinkStatus

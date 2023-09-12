@@ -15,13 +15,14 @@ export const MobileAttachmentRow: FC<MobileAttachmentRowProps> = (
     originalLink,
     clicks,
     status,
-    date
+    createdAt,
   }
 ) => {
   return (
     <MobileAttachmentList style={style}>
       <MobileTableCell>
         <MobileTableCellHeader>Original Link</MobileTableCellHeader>
+        {/* eslint-disable-next-line camelcase */}
         <MobileTableCellContent><OriginalLinkCell originalLink={originalLink} /></MobileTableCellContent>
       </MobileTableCell>
       <MobileTableCell>
@@ -38,7 +39,7 @@ export const MobileAttachmentRow: FC<MobileAttachmentRowProps> = (
       </MobileTableCell>
       <MobileTableCell>
         <MobileTableCellHeader>Date</MobileTableCellHeader>
-        <MobileTableCellContent>{date}</MobileTableCellContent>
+        <MobileTableCellContent>{JSON.stringify(createdAt)}</MobileTableCellContent>
       </MobileTableCell>
     </MobileAttachmentList>
   )

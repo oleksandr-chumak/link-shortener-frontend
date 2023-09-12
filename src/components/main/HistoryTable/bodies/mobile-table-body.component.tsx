@@ -1,7 +1,7 @@
 import { FC } from 'react'
-import { TableBodyProps } from '../../Table/history-table.types'
-import { MobileTableRow } from '../../rows'
-import { MobileTableBodyWrapper } from './mobile-table-body.styled'
+import { TableBodyProps } from '../Table/history-table.types'
+import { MobileTableRow } from '../rows'
+import { MobileTableBodyWrapper } from './table-body.styled'
 
 export const MobileTableBody: FC<TableBodyProps> = ({rows}) => {
   return (

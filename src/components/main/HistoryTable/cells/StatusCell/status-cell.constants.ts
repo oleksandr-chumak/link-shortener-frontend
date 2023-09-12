@@ -1,7 +1,7 @@
 import { Theme } from '../../../../../style/theme'
 import { GoUnlink, GoLink } from 'react-icons/go'
 import { IconType } from 'react-icons'
-import { LinkStatus } from '../../Table/history-table.types'
+import { LinkStatus } from '../../../../../store/interfaces/link.types'
 
 
 export const statusColor: Record<LinkStatus, string> = {

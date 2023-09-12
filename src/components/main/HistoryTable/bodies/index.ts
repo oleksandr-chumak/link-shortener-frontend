@@ -1,2 +1,2 @@
-export * from './DesktopTableBody/desktop-table-body.component'
-export * from './MobileTableBody/mobile-table-body.component'
+export * from './desktop-table-body.component'
+export * from './mobile-table-body.component'

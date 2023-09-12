@@ -9,6 +9,10 @@ export const NavigationBodyWrapper = styled.div`
   background-color: ${({ theme }) => rgba(theme.color.grey, 0.6)};
 `
 export const NavigationBodyContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;

@@ -1,5 +1,5 @@
 import React from 'react'
-import { TableHeader, TableHeaderCell, TableHeaderRow } from '../../../UI'
+import { TableHeader, TableHeaderCell, TableHeaderRow } from '../../UI'
 
 export const DesktopTableHeader = () => {
   return (

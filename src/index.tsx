@@ -5,9 +5,8 @@ import reportWebVitals from './reportWebVitals';
 import ReduxProvider from './store/redux-provider';
 import { Providers } from './views/Providers';
 
-
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
-console.log('here')
+
 root.render(
   // <React.StrictMode>
     <ReduxProvider>

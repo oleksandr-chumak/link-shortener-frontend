@@ -1,15 +1,15 @@
 import React, { FC } from 'react'
 import { OriginalLinkCell, QrCell, ShortLinkCell, StatusCell } from '../../cells'
 import { TableBodyCell, TableBodyRow } from '../../../UI'
-import { TableRowProps } from '../../Table/history-table.types'
+import { TransformedLink } from '../../../../../store/interfaces/link.types'
 
-export const DesktopTableRow: FC<TableRowProps> = (
+export const DesktopTableRow: FC<TransformedLink> = (
   {
     shortLink,
     originalLink,
     clicks,
     status,
-    date,
+    createdAt,
   }) => {
   return (
     <TableBodyRow>
@@ -18,7 +18,7 @@ export const DesktopTableRow: FC<TableRowProps> = (
       <TableBodyCell><QrCell shortLink={shortLink} /></TableBodyCell>
       <TableBodyCell>{clicks}</TableBodyCell>
       <TableBodyCell><StatusCell status={status} /></TableBodyCell>
-      <TableBodyCell>{date}</TableBodyCell>
+      <TableBodyCell>{JSON.stringify(createdAt)}</TableBodyCell>
     </TableBodyRow>
   )
 }

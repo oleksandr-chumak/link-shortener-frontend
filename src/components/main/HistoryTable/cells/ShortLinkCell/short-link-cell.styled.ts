@@ -10,7 +10,7 @@ export const ShortLinkCellWrapper = styled.div`
 `
 export const ShortLinkCellHeader = styled.h4`
   flex: 1 1 auto;
-  max-width: 150px;
+  max-width: 200px;
 `
 export const ShortLinkCopyWrapper = styled.button`
   display: flex;

@@ -5,3 +5,6 @@ export interface Alert {
   header: string,
   description: string
 }
+export interface AlertInitialStateInterface {
+  alerts: Alert[]
+}

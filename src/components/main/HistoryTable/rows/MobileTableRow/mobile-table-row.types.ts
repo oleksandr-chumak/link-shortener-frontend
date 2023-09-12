@@ -1,9 +1,9 @@
-import { TableRowProps } from '../../Table/history-table.types'
 import React from 'react'
+import { TransformedLink } from '../../../../../store/interfaces/link.types'
 
 export interface MobileToggleIconProps{
   $active: boolean;
 }
-export interface MobileAttachmentRowProps extends TableRowProps{
+export interface MobileAttachmentRowProps extends TransformedLink{
   style?: React.CSSProperties
 }
